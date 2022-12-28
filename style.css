@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Red+Hat+Display:wght@300;400&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Montserrat:wght@200&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+*{
+    margin:0;
+    padding:0
+}
+
+.navlist{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color: black;
+    height: 70px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.navlist li a:hover{
+    color:rgb(255, 94, 40)
+}
+
+.rightnav{
+    background-color: rgb(0, 0, 0);
+    margin: 50px;
+    width: 30%;
+    
+    text-align: center;
+}
+
+#search{
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.btn-sm{
+    color: rgb(246, 238, 238);
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    margin-left: 5px;
+
+}
+.btn-sm:hover{
+    color:orangered;
+    
+    
+    
+}
+
+.background{
+    background-color: black;
+    background-size: 100%;
+    background: linear-gradient(rgb(0, 0, 0),rgb(87, 29, 29));
+    
+}
+.background h3{
+    color: aliceblue;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 5px;
+}
+.background h1{
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    padding: 5px;
+}
+.boxmain{
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0%;
+    margin-left: 0%;
+    
+    
+    
+
+}
+
+.firsthalf{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*width: 620px;*/
+    width: 50%;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+
+}
+
+.secondHalf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+    /*width: 600px;*/
+    width: 50%;
+}
+
+img{
+    height: 600px;
+    
+    text-align: right;
+    width: 620px;
+    border-radius: 5px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15%;
+
+}
+
+.line{
+    width: 33px;
+    background-color: aliceblue;
+    height: 4px;
+    margin: 3px 3px;
+    justify-content: center;
+    
+
+
+}
+
+
+@media only screen and (max-width:1015px){
+    body{
+        background-color: black;
+    }
+    .navlist{
+        flex-direction: column;
+        
+        background: none;
+    }
+    .navbar{
+        flex-direction: column;
+        transition: all 0.3s ease-out;
+        height: 370px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 130px;
+        text-align: center;
+        
+        
+        
+    }
+    
+    .rightnav{
+        text-align: center;
+        background: none;width: 100%;
+    }
+    .boxmain{
+        flex-direction: column-reverse;
+        width: fit-content;
+        background-size: cover;
+        
+    }
+    .firsthalf{
+        text-align: left;
+        font-size: smaller;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    .img{
+        width:fit-content;
+    }
+    .burger{
+        display: block;
+        
+    }
+    .h-nav-resp{
+        height: 72px;
+        width:100% ;
+        background-color: black;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    #search{
+        width: fit-content;
+    }
+    .background {
+        background-size: cover;
+        background-color: rgb(87, 29, 29);
+        width: fit-content;
+    };
+    
+    .section{
+        display: flex;
+    }
+    .body{
+        display: contents;
+        background-color: rgb(87, 29, 29);
+    }
+    .img{
+        width: 200px;
+    }
+}
+
